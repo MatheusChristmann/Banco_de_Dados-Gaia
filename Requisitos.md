@@ -5,6 +5,7 @@
     <p> &nbsp
     Abaixo segue uma lista do levantamento dos requisitos funcionais, não funcionais e regras de negócio para elaboração da estrutura do Banco de Dados da <strong><em>Gaia</em></strong> (Sistema para Gestão de Farmácias):
     </p>
+    <h2></h2>
     <p> 
     <h2><strong>🪧 Legenda:</strong></h2>
         🟢 - Funcionais
