@@ -1,0 +1,28 @@
+TAREFAS:
+
+● Ajustar READ.ME;
+
+● Normalização do Banco de Dados;
+
+● Criação dos Scripts;
+
+● Inserção dos Dados;
+
+● Relatórios Específicos do Sistema;
+
+● Capa;
+
+● Folha de Rosto;
+
+● Lista de ilustrações(se necessário);
+
+● Sumário;
+
+● Introdução: apresentação do trabalho;
+
+● Desenvolvimento: descrição/apresentação das atividades do trabalho. Incluir todos os itens
+de avaliação previstos para cada disciplina;
+
+● Conclusão: conclusões a respeito do trabalho;
+
+● Referências: livros, artigos, vídeos, e-mails, etc
