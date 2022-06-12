@@ -25,15 +25,14 @@
         <li>🟢 Cadastrar clientes com suas informações básicas como CPF, RG e nome para realizar uma venda.</li><br>
         <li>🟢 Criar um vínculo entre os medicamentos, a sua devida tarja e seu devido tipo (Genérico, Similar e/ou Referência).</li><br>
         <li>🟢 Realizar vendas de produtos e compras para a reposição de estoque.</li><br>
-        <li>🟢 Controlar o estoque dos medicamentos, podendo saber a data de entrada e/ou saída e o responsável pelo processo (No caso, o funcionário).</li><br>
-        <li>🟢 Cadastro separado para funcionários onde deverá constar informações básicas como seu cargo, salário, data de admissão, login e senha do sistema.</li><br>
+        <li>🟢 Controlar o estoque dos medicamentos, podendo saber a data de entrada e/ou saída.</li><br>
+        <li>🟢 Cadastro separado para funcionários onde deverá constar informações básicas como seu cargo, salário e data de admissão.</li><br>
         <li>🟡 Controle sobre as saídas de acordo com a tarjas dos medicamentos vendidos(relatório percentual de saída por tarja).</li><br>
         <li>🟢 Permitir múltiplos meios de pagamento para as vendas e compras (Dinheiro, cartão de crédito e débito, cupom, etc...).</li><br>
         <li>🟠 Clientes já cadastrados a mais de um ano no sistema possuem 5% de desconto em compras na farmácia. Após 3 anos, ao cliente se acrescenta mais 10% de desconto e após 8 anos se acrescenta mais 10% de desconto.</li><br>
         <li>🟡 As compras só podem ser realizadas através de CNPJ's (Apenas de empresas/laboratórios farmaceuticos), porém as vendas podem ser realizadas tanto para CPF quanto para CNPJ.</li><br>
         <li>🟡 Clientes podem ou não apresentar receitas para a retirada de medicamentos. Caso seja apresentado receita, a mesma deverá ser inserida no sistema e vinculada a venda e ao cliente. </li><br>
         <li>🟢 Necessidade de cadastro de diversos telefones para um mesmo cliente ou fornecedor.</li><br>
-        <li>🟢 Todas as receitas que forem inseridas no sistema terão que obrigatoriamente ter um médico vinculado que escreveu a receita e seu número de credenciamento informados por questões jurídicas.</li><br>
         <li>🟡 Todo final de mês deve ser retirado um relatório dos clientes que realizaram compras durante o mês na farmácia</li><br>
         <li>🟢 Necessário informar a quantidade de estoque minímo para os medicamentos. Sendo assim, no fim da semana é retirado um relatório dos produtos com estoque negativo para então planejar as compras.</li><br>
         <li>🟠 Dependendo do tipo do medicamento, haverá as seguintes porcentagens fixas de desconto:
