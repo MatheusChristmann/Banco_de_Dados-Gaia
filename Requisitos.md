@@ -22,14 +22,13 @@
     <ol>
         <li>🟡 Possibilidade de saber a rentabilidade de um funcionário em relação as suas vendas por mês.</li><br>
         <li>🟡 Saber qual é o medicamento/produto mais vendido durante determinado período.</li><br>
-        <li>🟢 Cadastrar clientes com suas informações básicas como CPF, RG e nome para realizar uma venda.</li><br>
+        <li>🟢 Cadastrar clientes com suas informações básicas como CPF e nome para realizar uma venda.</li><br>
         <li>🟢 Criar um vínculo entre os medicamentos, a sua devida tarja e seu devido tipo (Genérico, Similar e/ou Referência).</li><br>
         <li>🟢 Realizar vendas de produtos e compras para a reposição de estoque.</li><br>
         <li>🟢 Controlar o estoque dos medicamentos, podendo saber a data de entrada e/ou saída.</li><br>
-        <li>🟢 Cadastro separado para funcionários onde deverá constar informações básicas como seu cargo, salário e data de admissão.</li><br>
+        <li>🟢 Cadastro separado para funcionários onde deverá constar informações básicas como seu cargo e salário.</li><br>
         <li>🟡 Controle sobre as saídas de acordo com a tarjas dos medicamentos vendidos(relatório percentual de saída por tarja).</li><br>
         <li>🟢 Permitir múltiplos meios de pagamento para as vendas e compras (Dinheiro, cartão de crédito e débito, cupom, etc...).</li><br>
-        <li>🟠 Clientes já cadastrados a mais de um ano no sistema possuem 5% de desconto em compras na farmácia. Após 3 anos, ao cliente se acrescenta mais 10% de desconto e após 8 anos se acrescenta mais 10% de desconto.</li><br>
         <li>🟡 As compras só podem ser realizadas através de CNPJ's (Apenas de empresas/laboratórios farmaceuticos), porém as vendas podem ser realizadas tanto para CPF quanto para CNPJ.</li><br>
         <li>🟡 Clientes podem ou não apresentar receitas para a retirada de medicamentos. Caso seja apresentado receita, a mesma deverá ser inserida no sistema e vinculada a venda e ao cliente. </li><br>
         <li>🟢 Necessidade de cadastro de diversos telefones para um mesmo cliente ou fornecedor.</li><br>
