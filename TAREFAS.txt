@@ -1,22 +1,16 @@
 TAREFAS:
 
-● Ajustar READ.ME;
+● Ajustar READ.ME = Matheus;
 
-● Normalização do Banco de Dados;
+● Normalização do Banco de Dados = Todos;
 
-● Criação dos Scripts;
+● Criação dos Scripts = Michel;
 
 ● Inserção dos Dados;
 
 ● Relatórios Específicos do Sistema;
 
-● Capa;
-
-● Folha de Rosto;
-
 ● Lista de ilustrações(se necessário);
-
-● Sumário;
 
 ● Introdução: apresentação do trabalho;
 
