@@ -34,8 +34,7 @@
         <li>🟢 Necessidade de cadastro de diversos telefones para um mesmo cliente ou fornecedor.</li><br>
         <li>🟡 Todo final de mês deve ser retirado um relatório dos clientes que realizaram compras durante o mês na farmácia</li><br>
         <li>🟢 Necessário informar a quantidade de estoque minímo para os medicamentos. Sendo assim, no fim da semana é retirado um relatório dos produtos com estoque negativo para então planejar as compras.</li><br>
-        
-    </ol>
+        </ol>
 <div>
 
 #
