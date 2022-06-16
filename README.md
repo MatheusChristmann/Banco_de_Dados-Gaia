@@ -1,6 +1,6 @@
-# Título do projeto
+# Gaia
 
-Descrição do projeto
+Sistema para gerenciamento de Farmácias
 
 ## 🚀 Começando
 
@@ -26,25 +26,25 @@ Desenvolvedores do Projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="" width="100px;" alt=""/><br>
+        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Utils/Imagens/Jean.jpg?raw=true" width="100px;" alt="Jean"/><br>
         <sub>
-          <b>Jean</b>
+          <b>Jean Barp</b>
         </sub>
       </a>
     </td>
     <td align="center">
       <a href="#">
-        <img src="" width="100px;" alt=""/><br>
+        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Utils/Imagens/Matheus.jpg?raw=true" width="100px;" alt="Matheus"/><br>
         <sub>
-          <b>Matheus</b>
+          <b>Matheus Christmann</b>
         </sub>
       </a>
     </td>
     <td align="center">
       <a href="#">
-        <img src="" width="100px;" alt=""/><br>
+        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Utils/Imagens/Michel.jpg?raw=true" width="100px;" alt="Michell"/><br>
         <sub>
-          <b>Michel</b>
+          <b>Michell Spagnol</b>
         </sub>
       </a>
     </td>
