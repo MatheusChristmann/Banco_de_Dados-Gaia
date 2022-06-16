@@ -1,11 +1,5 @@
 Estrutura do trabalho (desenvolvimento):
 
-- Escolha do Modelo Farmácia 
-  (Discussão em grupo, escolha do nome, logo e primeiras ideias);
-
-- Levantamento de requisitos
-  (Entrevista realizada, perguntas feitas e descrição dos requisitos e sua divisão);
-
 - Construção do Modelo Relacional Com Imagens
   (Criação de tabelas e Campos, seus tipos e ligações feitas);
 
