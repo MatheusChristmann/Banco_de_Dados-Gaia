@@ -43,7 +43,7 @@ insert into funcionario values
   (2, 'Drew Carpenter', '90497266366', '5244285', '10/12/1998', 'M', 2),
   (3, 'Kristen P. Simmons', '85431825412', '1765224', '10/7/1990', 'F', 4),
   (4, 'Lunea Barker', '41664601696', '4746512', '16/2/1998', 'F', 1),
-  (5, 'Nevada Hampton', '68179216011', '5672848', '26/11/2000', 'O', 2);
+  (5, 'Nevada Hampton', '68179216011', '5672848', '26/11/2000', 'F', 2);
 
 select * from FUNCIONARIO ;
  
@@ -94,32 +94,37 @@ insert into ENDERECO_PES values
   (1,3,7,'Zone','Goosd',3638,'16466158','71-966367528','id.magna@hotmail.com','89890-000'),
   (2,3,2,'Santa_Maria','La_sale',2188,'47273435','15-926435112','maecenas.libero@google.com','89890-000'),
   (3,4,10,'Santa_Maria','Avenida_Brasail',754,'54975334','48-937231316','vel.arcu@outlook.com','89890-000'),
-  (4,3,1,'Interior','France',2319,'61071564','74-967478756','mauris.ut@outlook.com','89900-000'),
+  (4,3,1,'Interior', null, null,'61071564','74-967478756','mauris.ut@outlook.com','89900-000'),
   (5,1,11,'Tec','Avenida_Brasail',4118,'80132591','18-944726258','in.magna@hotmail.com','89908-000'),
   (6,2,4,'Zone','Avenida_Brasail',3573,'28188335','14-912314567','fermentum.risus@google.com','89908-000'),
   (7,3,14,'Interlag','Goosd',1926,'65842156','43-961722564','adipiscing.elit@hotmail.com','89900-000'),
   (8,2,13,'Interlag','Avenida_Brasail',3370,'86385576','42-948217794','commodo.tincidunt.nibh@outlook.com','89890-000'),
-  (9,2,3,'Interior','Avenida_Brasail',3650,'76228968','62-992782774','nibh@hotmail.com','89908-000'),
+  (9,2,3,'Interior',null,null,'76228968','62-992782774','nibh@hotmail.com','89908-000'),
   (10,3,16,'Tec','Avenida_Brasail',3760,'63532298','52-978167262','tellus.aenean.egestas@hotmail.com','89890-000'),
   (11,3,8,'Centro','La_sale',4921,'91366667','74-938326940','ultrices.posuere.cubilia@outlook.com','89890-000'),
   (12,3,5,'Zone','Avenida_Brasail',911,'75213030','79-914535545','nunc.in.at@google.com','89900-000'),
   (13,3,9,'Interlag','La_sale',3600,'64258802','55-941483887','molestie.sed@hotmail.com','89890-000'),
   (14,1,12,'Interlag','La_sale',4945,'11914741','13-908134805','fringilla.ornare@hotmail.com','89890-000'),
-  (15,4,6,'Interior','Goosd',11,'77910382','87-911066356','eget@hotmail.com','89908-000'),
+  (15,4,6,'Interior',null,null,'77910382','87-911066356','eget@hotmail.com','89908-000'),
   (16,1,15,'Santa_Maria','France',1257,'66785815','74-941818856','risus@google.com','89908-000');
 
 select * from ENDERECO_PES ;
 
 -----------------------------------
 insert into PRINCIPIO_ATIVO values
+(1, 'Paracetamol');
 
 
-
-select * from PRINCIPIO_ATIVO ;
+select * from PRINCIPIO_ATIVO ; 
 
 -----------------------------------
 insert into TIPO_MEDICAMENTO values 
+(1,'Referência'), 
+(2, 'Genéricos'),
+(3, 'Similares');
+
 select * from TIPO_MEDICAMENTO ;
+
 -----------------------------------
 insert into TIPO_TARJA values 
 (1, 'Sem tarja'),
@@ -128,28 +133,65 @@ insert into TIPO_TARJA values
 (4, 'Tarja Preta');
 
 select * from TIPO_TARJA;
+
 -----------------------------------
 insert into UNIDADE_MEDIDA values 
+(1, 'Kg- Quilo'),
+(2, 'g- Grama'),
+(3, 'mg- Miligrama'),
+(4, 'L- Litro'),
+(5, 'ml- mililitro');
+
 select * from UNIDADE_MEDIDA ;
+
 -----------------------------------
 insert into PRODUTO values 
+(1, 'paracetamol', 'Medicamento para alívio de dores de cabeça', 4.99, 5000, 750, 1, 2, 2, 3, 500);
+
 select * from PRODUTO ;
+
 -----------------------------------
-insert into XXX values 
+insert into TIPO_PAGAMENTO values
+(1, 'Dinheiro'),
+(2, 'Cartão de Crédito'),
+(3, 'Cartão de Débito'),
+(4, 'Pix'), 
+(5, 'Cheque'), 
+(6, 'Boleto Bancário ');
+
+
 select * from TIPO_PAGAMENTO ;
+
 -----------------------------------
 insert into VENDA values 
+(1, 2, '14/02/2022 14:30:23', 1, 5, null);
+
 select * from VENDA ;
+
 -----------------------------------
 insert into VENDA_ITEM values 
+
+delete from VENDA_ITEM 
+where VEI_ID = 1;
+
 select * from VENDA_ITEM ;
+
 -----------------------------------
 insert into COMPRA values 
+(1, 4, '03/01/2022 07:40:05', 5, 4);
+
 select * from COMPRA ;
+
 -----------------------------------
 insert into COMPRA_ITEM values 
+
+
 select * from COMPRA_ITEM ;
+
 -----------------------------------
-insert into PRODUTO_MOVIMENTO values C
+insert into PRODUTO_MOVIMENTO values
+(1, '03/01/2022 07:40:05', 1, 4, +5000),
+(2, '14/02/2022 14:30:23', 1, 2, -20);
+
 select * from PRODUTO_MOVIMENTO ;
 -----------------------------------

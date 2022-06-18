@@ -6,14 +6,14 @@ create table ESTADO (
 );
 
 
-comment on table ESTADO 
-	is 'Cadastro de Estados do Brasil.';
+comment on table ESTADO 	
+	is 'Cadastro de Unidades Federativas.';
 	comment on column ESTADO.EST_COD 
-		is 'Código do Estado.';
+		is 'Código do estado.';
 	comment on column ESTADO.EST_SIGLA 
-		is 'Sigla do Estado.';
+		is 'Sigla do estado.';
 	comment on column ESTADO.EST_NOME 
-		is 'Nome do Estado.';
+		is 'Nome do estado.';	
 
 ----------------------------------------------------------------
 create table MUNICIPIO (
@@ -27,15 +27,15 @@ alter table MUNICIPIO
 	add constraint MUN_COD_ESTADO_FK foreign key (COD_ESTADO) 
 	references ESTADO (EST_COD);
  
-
+	
 comment on table MUNICIPIO 
 	is 'Cadastro de Municípios.';
 	comment on column MUNICIPIO.MUN_COD 
-		is 'Código do Munícipio';
+		is 'Código do munícipio.';
 	comment on column MUNICIPIO.MUN_NOME 
-		is 'Nome do Município.';
+		is 'Nome do município.';
 	comment on column MUNICIPIO.COD_ESTADO 
-		is 'Código do Estado do Município.';
+		is 'Código do estado do município.';	
 
 ----------------------------------------------------------------
 create table CEP (
@@ -48,13 +48,13 @@ alter table CEP
 	add constraint CEP_COD_MUNICIPIO_FK foreign key (COD_MUNICIPIO) 
 	references MUNICIPIO (MUN_COD);
  
-
+	
 comment on table CEP 
 	is 'Cadastro de CEPs dos Munícipios.';
 	comment on column CEP.CEP_COD 
 		is 'CEP.';
 	comment on column CEP.COD_MUNICIPIO 
-		is 'Código do Município do CEP.';
+		is 'Código do município do CEP.';	
 
 ----------------------------------------------------------------
 create table CARGO (
@@ -68,11 +68,11 @@ create table CARGO (
 comment on table CARGO 
 	is 'Cadastro de Cargos para os Funcionários.';
 	comment on column CARGO.CAR_COD 
-		is 'Código do Cargo.';
+		is 'Código do cargo.';
 	comment on column CARGO.CAR_DESCRICAO 
-		is 'Descrição (Nome) do Cargo.';
+		is 'Descrição (Nome) do cargo.';
 	comment on column CARGO.CAR_SALARIO 
-		is 'Salário do Cargo.';
+		is 'Salário do cargo.';
 
 ----------------------------------------------------------------
 create table FUNCIONARIO (
@@ -83,7 +83,7 @@ create table FUNCIONARIO (
 	FUN_RG numeric(7, 0) not null unique, 
 	FUN_DATA_NASCIMENTO date not null, 
 	FUN_GENERO char(1)
-	constraint FUN_GENERO_CK check (FUN_GENERO in ('F', 'M', 'O')), 
+	constraint FUN_GENERO_CK check (FUN_GENERO in ('F', 'M')), 
 	COD_CARGO int4 not null
 );
 
@@ -95,19 +95,19 @@ alter table FUNCIONARIO
 comment on table FUNCIONARIO 
 	is 'Cadastro de Funcionários.';
 	comment on column FUNCIONARIO.FUN_COD 
-		is 'Código do Funcionário';
+		is 'Código do funcionário.';
 	comment on column FUNCIONARIO.FUN_NOME 
-		is 'Nome do Funcionário';
+		is 'Nome do funcionário.';
 	comment on column FUNCIONARIO.FUN_CPF 
-		is 'CPF do Funcionário';
+		is 'CPF do funcionário.';
 	comment on column FUNCIONARIO.FUN_RG 
-		is 'RG do Funcionário';
+		is 'RG do funcionário.';
 	comment on column FUNCIONARIO.FUN_DATA_NASCIMENTO 
-		is 'Data de Nascimento do Funcionário';
+		is 'Data de nascimento do funcionário.';
 	comment on column FUNCIONARIO.FUN_GENERO 
-		is 'Gênero do Funcionário (M = Masculino, F = Feminino, O = Outro)';
+		is 'Gênero do funcionário (M = Masculino, F = Feminino).';
 	comment on column FUNCIONARIO.COD_CARGO 
-		is 'Código do Cargo vinculado ao Funcionário';
+		is 'Código do cargo vinculado ao funcionário.';
 	
 ----------------------------------------------------------------
 create table PESSOA (
@@ -119,30 +119,30 @@ create table PESSOA (
   PES_CPFCNPJ numeric(14, 0) not null unique, 
   PES_IE varchar(9) unique, 
   PES_GENERO char(1)
-  constraint PES_GENERO_CK check (PES_GENERO in ('F', 'M', 'O')), 
+  constraint PES_GENERO_CK check (PES_GENERO in ('F', 'M')), 
   PES_DATA_NASCIMENTO date not null, 
   PES_DATA_CADASTRO   date not null
 );
  
- 
+
 comment on table PESSOA 
 	is 'Cadastro de Pessoas (Cliente e Fornecedores).';
 	comment on column PESSOA.PES_COD 
-		is 'Código da Pessoa';
+		is 'Código da pessoa.';
 	comment on column PESSOA.PES_NOME 
-		is 'Nome Completo da Pessoa';
+		is 'Nome completo da pessoa.';
 	comment on column PESSOA.PES_TIPO 
-		is 'Indica o tipo de pessoa (J = Jurídica ou F = Física)';
+		is 'Tipo da pessoa (J = Jurídica ou F = Física).';
 	comment on column PESSOA.PES_CPFCNPJ 
-		is 'CPF/CNPJ da Pessoa';
+		is 'CPF/CNPJ da pessoa.';
 	comment on column PESSOA.PES_IE 
-		is 'Inscrição Estadual da Pessoa.';
+		is 'Inscrição estadual da pessoa.';
 	comment on column PESSOA.PES_GENERO 
-		is 'Gênero da Pessoa (M = Masculino, F = Feminino, O = Outro)';
+		is 'Gênero da Pessoa (M = Masculino, F = Feminino).';
 	comment on column PESSOA.PES_DATA_NASCIMENTO 
-		is 'Data de Nascimento da Pessoa (Ou Data de Fundação, caso seja CNPJ).';
+		is 'Data de nascimento da pessoa (ou data de fundação, caso seja CNPJ).';
 	comment on column PESSOA.PES_DATA_CADASTRO 
-		is 'Data de cadastro da Pessoa no Banco de Dados';
+		is 'Data de cadastro da pessoa no banco de dados/sistema.';	
 
 ----------------------------------------------------------------
 create table TIPO_ENDERECO (
@@ -151,14 +151,14 @@ create table TIPO_ENDERECO (
   TIE_DESCRICAO varchar(25) not null
 );
  
-
+	
 comment on table TIPO_ENDERECO 
 	is 'Cadastro de Tipos de Endereço.';
-	comment on column TIPO_ENDERECO.TIE_COD 
-		is 'Código do Tipo de Endereço';
+	comment on column TIPO_ENDERECO.TIE_COD 	
+		is 'Código do tipo de endereço.';
 	comment on column TIPO_ENDERECO.TIE_DESCRICAO 
-		is 'Descrição do Tipo de Endereço';
-
+		is 'Descrição do tipo de endereço.';	
+	
 ----------------------------------------------------------------
 create table ENDERECO_FUN (
   ENF_ID serial
@@ -187,29 +187,29 @@ alter table ENDERECO_FUN
 add constraint ENF_CEP_FK foreign key (ENF_CEP) 
 references CEP (CEP_COD);
 
- 
+	
 comment on table ENDERECO_FUN 
-	is 'Cadastro dos Endereços de Funcionários';
+	is 'Cadastro dos Endereços de Funcionários.';
 	comment on column ENDERECO_FUN.ENF_ID 
-		is 'ID de Identificação do endereço do Funcionario.';
+		is 'ID de identificação do endereço do funcionario.';
 	comment on column ENDERECO_FUN.ENF_TIP_END 
-		is 'Código do Tipo de Endereço.';
+		is 'Código do tipo de Endereço.';
 	comment on column ENDERECO_FUN.ENF_FUNCIONARIO 
-		is 'Código do Funcionário.';
+		is 'Código do funcionário.';
 	comment on column ENDERECO_FUN.ENF_BAIRRO 
-		is 'Nome do Bairro';
+		is 'Nome do bairro.';
 	comment on column ENDERECO_FUN.ENF_RUA 
-		is 'Nome da Rua.';
+		is 'Nome da rua.';
 	comment on column ENDERECO_FUN.ENF_NUMERO 
-		is 'Número do Endereço.';
+		is 'Número do endereço.';
 	comment on column ENDERECO_FUN.ENF_TELEFONE 
-		is 'Número de Telefone.';
+		is 'Número de telefone.';
 	comment on column ENDERECO_FUN.ENF_CELULAR 
-		is 'Número de Calular.';
+		is 'Número de celular.';
 	comment on column ENDERECO_FUN.ENF_EMAIL 
-		is 'Endereço de Email.';
+		is 'Endereço de email.';
 	comment on column ENDERECO_FUN.ENF_CEP 
-		is 'CEP do Endereço.';
+		is 'CEP do endereço.';	
 
 ----------------------------------------------------------------
 create table ENDERECO_PES (
@@ -239,29 +239,29 @@ alter table ENDERECO_PES
 add constraint ENP_CEP_FK foreign key (ENP_CEP) 
 references CEP (CEP_COD);
    
-
-comment on table ENDERECO_PES 
-	is 'Cadastro de Endereços de Pessoas(Clientes/Forncedores).';
+	
+comment on table ENDERECO_PES
+	is 'Cadastro de Endereços de Pessoas.';
 	comment on column ENDERECO_PES.ENP_ID 
-		is 'ID de Identificação de endereço da Pessoa.';
+		is 'ID de identificação de endereço da pessoa.';
 	comment on column ENDERECO_PES.ENP_TIP_END 
-		is 'Código do Tipo de Endereço';
+		is 'Código do tipo de endereço.';
 	comment on column ENDERECO_PES.ENP_PESSOA 
-		is 'Código da Pessoa.';
+		is 'Código da pessoa.';
 	comment on column ENDERECO_PES.ENP_BAIRRO 
-		is 'Nome do Bairro.';
+		is 'Nome do bairro.';
 	comment on column ENDERECO_PES.ENP_RUA 
-		is 'Nome da Rua.';
+		is 'Nome da rua.';
 	comment on column ENDERECO_PES.ENP_NUMERO 
-		is 'Número do Endereço.';
+		is 'Número do endereço.';
 	comment on column ENDERECO_PES.ENP_TELEFONE 
-		is 'Número de Telefone.';
+		is 'Número de telefone.';
 	comment on column ENDERECO_PES.ENP_CELULAR 
-		is 'Número de Celular.';
+		is 'Número de celular.';
 	comment on column ENDERECO_PES.ENP_EMAIL 
-		is 'Endereço de Email.';
+		is 'Endereço de email.';
 	comment on column ENDERECO_PES.ENP_CEP 
-		is 'CEP do Endereço.';
+		is 'CEP do endereço.';	
 
 ----------------------------------------------------------------
 create table PRINCIPIO_ATIVO (
@@ -270,13 +270,13 @@ create table PRINCIPIO_ATIVO (
   PIA_DESCRICAO varchar(50) not null 
 );
  
- 
+	
 comment on table PRINCIPIO_ATIVO 
 	is 'Cadastro de Princípios Ativos.';
 	comment on column PRINCIPIO_ATIVO.PIA_COD 
-		is 'Código do Princípio Ativo.';
+		is 'Código do princípio ativo.';
 	comment on column PRINCIPIO_ATIVO.PIA_DESCRICAO 
-		is 'Descrição/nome do Princípio Ativo.';
+		is 'Descrição/nome do princípio ativo.';	
 
 ----------------------------------------------------------------
 create table TIPO_MEDICAMENTO (
@@ -285,27 +285,28 @@ create table TIPO_MEDICAMENTO (
   TIM_DESCRICAO varchar(25) not null 
 );
  
- 
+		
 comment on table TIPO_MEDICAMENTO 
-	is 'Cadastro de Tipos de Medicmentos.';
-		comment on column TIPO_MEDICAMENTO.TIM_COD 
-			is 'Código do Tipo de Medicamento.';
-		comment on column TIPO_MEDICAMENTO.TIM_DESCRICAO 
-			is 'Descrição do Tipo de Medicamento';
-
+	is 'Cadastro de Tipos de Medicamentos.';
+	comment on column TIPO_MEDICAMENTO.TIM_COD 
+		is 'Código do tipo de medicamento.';
+	comment on column TIPO_MEDICAMENTO.TIM_DESCRICAO 
+		is 'Descrição do tipo de medicamento.';
+			
 ----------------------------------------------------------------
 create table TIPO_TARJA (
   TIT_COD serial
   constraint TIT_COD_PK primary key, 
   TIT_DESCRICAO varchar(25) not null
 ); 
- 
+
+	
 comment on table TIPO_TARJA 
 	is 'Cadastro de Tipos de Tarja.';
 	comment on column TIPO_TARJA.TIT_COD 
-		is 'Código do Tipo de Tarja.';
+		is 'Código do tipo de tarja.';
 	comment on column TIPO_TARJA.TIT_DESCRICAO 
-		is 'Descrição do Tipo de Tarja.';
+		is 'Descrição do tipo de tarja.';
 
 ----------------------------------------------------------------
 create table UNIDADE_MEDIDA (
@@ -318,9 +319,9 @@ create table UNIDADE_MEDIDA (
 comment on table UNIDADE_MEDIDA 
 	is 'Cadastro de Unidades de Medida.';
 	comment on column UNIDADE_MEDIDA.UNM_COD 
-		is 'Código da Unidade de Medida';
+		is 'Código da unidade de medida.';
 	comment on column UNIDADE_MEDIDA.UNM_DESCRICAO 
-		is 'Descrição da Unidade de Medida.';
+		is 'Descrição da unidade de medida.';		
 
 ----------------------------------------------------------------
 create table PRODUTO (
@@ -354,23 +355,31 @@ alter table PRODUTO
 add constraint PRO_TIP_MED_FK foreign key (PRO_TIP_MED) 
 references TIPO_MEDICAMENTO (TIM_COD);
 
- 
+
 comment on table PRODUTO 
 	is 'Cadastro de Produtos.';
 	comment on column PRODUTO.PRO_COD 
-		is 'Código do Produto.';
+		is 'Código do produto.';
 	comment on column PRODUTO.PRO_NOME 
-		is 'Nome do Produto';
+		is 'Nome do produto.';
 	comment on column PRODUTO.PRO_DESCRICAO 
-		is 'Descrição do Produto.';
+		is 'Descrição do produto.';
 	comment on column PRODUTO.PRO_PRECO 
-		is 'Preço de venda do Produto.';
+		is 'Preço de venda do produto.';
 	comment on column PRODUTO.PRO_QUANTIDADE 
-		is 'Quantidade em estoque do Produto.';
+		is 'Quantidade em estoque do produto.';
 	comment on column PRODUTO.PRO_PESO 
-		is 'Peso bruto do Produto';
+		is 'Peso bruto do produto.';
+	comment on column PRODUTO.PRO_PRI_ATIVO 
+		is 'Princípio ativo do produto.';
+	comment on column PRODUTO.PRO_TIP_MED 
+		is 'Tipo de medicamento do produto.';
+	comment on column PRODUTO.PRO_TIP_TAR 
+		is 'Tipo de tarja do produto.';
+	comment on column PRODUTO.PRO_UNI_MED 
+		is 'Unidade de medida do produto.';
 	comment on column PRODUTO.PRO_ESTOQUE_MINIMO 
-		is 'Quantidade de estoque mínimo para o produto.';
+		is 'Quantidade de estoque mínimo para o produto.';	
 
 ----------------------------------------------------------------
 create table TIPO_PAGAMENTO (
@@ -410,19 +419,22 @@ alter table VENDA
 add constraint VEN_COD_FUNCIONARIO_FK foreign key (COD_FUNCIONARIO) 
 references FUNCIONARIO (FUN_COD);
  
- 
-comment on table VENDA is 'Tabela com registro de Vendas.';
+	
+comment on table VENDA 
+	is 'Tabela com registro de Vendas.';
 	comment on column VENDA.VEN_NUMERO 
-		is 'Número de Venda';
+		is 'Número de venda.';
 	comment on column VENDA.COD_PESSOA 
-		is 'Código da Pessoa(Cliente) que está comprando.';
+		is 'Código da pessoa a qual está sendo realizada a venda.';
 	comment on column VENDA.VEN_DATA 
-		is 'Data da Venda';
+		is 'Data da venda.';
 	comment on column VENDA.COD_PAGAMENTO 
-		is 'Código do Tipo de Pagamento usado na Venda.';
+		is 'Código do tipo de pagamento usado na venda.';
 	comment on column VENDA.COD_FUNCIONARIO 
-		is 'Código do Funcionário que efetuou a Venda.';
-
+		is 'Código do funcionário que efetuou a venda.';
+	comment on column VENDA.VEN_RECEITA 
+		is 'Receita apresentada durante a venda.';
+	
 ----------------------------------------------------------------
 create table VENDA_ITEM (
   VEI_ID serial
@@ -441,23 +453,23 @@ references VENDA (VEN_NUMERO);
 alter table VENDA_ITEM 
 add constraint VEI_PRO_COD_FK foreign key (VEI_PRO_COD) 
 references PRODUTO (PRO_COD);
- 
- 
-comment on table VENDA_ITEM 	
+
+
+comment on table VENDA_ITEM 
 	is 'Tabela com os Itens(Produtos) da Venda.';
 	comment on column VENDA_ITEM.VEI_ID 
 		is 'ID de identificação do item de uma venda.';
 	comment on column VENDA_ITEM.VEI_VEN_NUMERO 
-		is 'Número da Venda a qual o item pertence.';
+		is 'Número da venda a qual o item pertence.';
 	comment on column VENDA_ITEM.VEI_PRO_COD 
-		is 'Código do item(Produto) na Venda';
+		is 'Código do item(produto) na venda.';
 	comment on column VENDA_ITEM.VEI_QTD_ITEM 
-		is 'Quantidade to item na Venda.';
+		is 'Quantidade do item na venda.';
 	comment on column VENDA_ITEM.VEI_PRECO 
-		is 'Preço de utilizado para venda. Se trata de uma cópia do preço do produto.';
+		is 'Preço utilizado para venda. Se trata de uma cópia do preço do produto.';
 	comment on column VENDA_ITEM.VEI_TOTAL_ITEM 
 		is 'Valor total do item na venda.';
-
+	
 ----------------------------------------------------------------
 create table COMPRA (
   COM_NUMERO serial
@@ -480,20 +492,20 @@ alter table COMPRA
 add constraint COM_COD_FUNCIONARIO_FK foreign key (COD_FUNCIONARIO) 
 references FUNCIONARIO (FUN_COD);
 
- 
-comment on table COMPRA 
-		is 'Tabela com registro de Compras.';
-	comment on column COMPRA.COM_NUMERO 
-		is 'Número da Compra';
-	comment on column COMPRA.COD_PESSOA 
-		is 'Código da Pessoa(Fornecedor) que realizou a Venda.';
-	comment on column COMPRA.COM_DATA 
-		is 'Data da efetivação da Compra.';
-	comment on column COMPRA.COD_PAGAMENTO 
-		is 'Código do Tipo de Pagamento da Compra.';
-	comment on column COMPRA.COD_FUNCIONARIO 
-		is 'Código do Funcionário que efetuou a Compra.';
 
+comment on table COMPRA 
+	is 'Tabela com registro de Compras.';
+	comment on column COMPRA.COM_NUMERO 
+		is 'Número da compra.';
+	comment on column COMPRA.COD_PESSOA 
+		is 'Código da pessoa a qual foi feita a compra.';
+	comment on column COMPRA.COM_DATA 
+		is 'Data da efetivação da compra.';
+	comment on column COMPRA.COD_PAGAMENTO 
+		is 'Código do tipo de pagamento da compra.';
+	comment on column COMPRA.COD_FUNCIONARIO 
+		is 'Código do funcionário que efetuou a compra.';
+	
 ----------------------------------------------------------------
 create table COMPRA_ITEM (
   COI_ID serial 
@@ -513,17 +525,17 @@ alter table COMPRA_ITEM
 add constraint COI_COM_NUMERO_FK foreign key (COI_COM_NUMERO) 
 references COMPRA (COM_NUMERO);
  
- 
+ 	
 comment on table COMPRA_ITEM 
 	is 'Itens(Produtos) da Compra.';
 	comment on column COMPRA_ITEM.COI_ID 
 		is 'ID de identificação do item de uma compra.';
 	comment on column COMPRA_ITEM.COI_COM_NUMERO 
-		is 'Número da Compra a qual o item pertence';
+		is 'Número da compra a qual o item pertence.';
 	comment on column COMPRA_ITEM.COI_PRO_COD 
-		is 'Código do item(Produto) na Compra';
-	comment on column COMPRA_ITEM.COI_QTD_ITEM 	
-		is 'Quantidade do item na Compra';
+		is 'Código do item(produto) na compra.';
+	comment on column COMPRA_ITEM.COI_QTD_ITEM 
+		is 'Quantidade do item na compra.';
 	comment on column COMPRA_ITEM.COI_UNITARIO_ITEM 
 		is 'Valor unitário do item.';
 	comment on column COMPRA_ITEM.COI_TOTAL_ITEM 
@@ -545,19 +557,19 @@ references PESSOA (PES_COD);
 alter table PRODUTO_MOVIMENTO add constraint PRM_PRODUTO_FK foreign key (PRM_PRODUTO) 
 references PRODUTO (PRO_COD);
  
- 
-comment on table PRODUTO_MOVIMENTO 
+	
+comment on table PRODUTO_MOVIMENTO 	
 	is 'Tabela contendo as movimentações de entrada e saída de produtos. Utilizada no controle de estoque.';
 	comment on column PRODUTO_MOVIMENTO.PRM_ID 
 		is 'ID de identificação da movimentação de um produto.';
 	comment on column PRODUTO_MOVIMENTO.PRM_DATA 
 		is 'Data em que foi realizada a compra ou a venda de um produto.';
 	comment on column PRODUTO_MOVIMENTO.PRM_PRODUTO 
-		is 'Código do produto que está sofrendo uma movimentação.';
+		is 'Código do produto que está sofrendo movimentação.';
 	comment on column PRODUTO_MOVIMENTO.PRM_PESSOA 
 		is 'Código da pessoa que realizou a venda ou a compra.';
 	comment on column PRODUTO_MOVIMENTO.PRM_QTD_PRODUTO 
-		is 'Quantidade do produto que está sofrendo uma movimentação.';
+		is 'Quantidade do produto que está sofrendo movimentação.';	
 
 ------------------------------------------------------------------------------------------------------------------------
 
