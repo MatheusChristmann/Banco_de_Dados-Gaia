@@ -1,22 +1,18 @@
 TAREFAS A SEREM FEITAS:
 
-● Ajustar READ.ME = Matheus;
+● Ajustar READ.ME = Matheus
 
-● Criação dos Scripts = Michel;
+● Inserção dos Dados = Michel
 
-● Inserção dos Dados;
+● Relatórios Específicos do Sistema
 
-● Relatórios Específicos do Sistema;
+● Lista de ilustrações(se necessário)
 
-● Lista de ilustrações(se necessário);
+● Desenvolvimento: descrição/apresentação das atividades do trabalho. Incluir todos os itens de avaliação previstos para cada disciplina = Matheus
 
-● Introdução: apresentação do trabalho = Jean;
+● Conclusão: conclusões a respeito do trabalho = Jean
 
-● Desenvolvimento: descrição/apresentação das atividades do trabalho. Incluir todos os itens de avaliação previstos para cada disciplina = Matheus;
-
-● Conclusão: conclusões a respeito do trabalho = Jean;
-
-● Referências: livros, artigos, vídeos, e-mails, etc  = Jean;
+● Referências: livros, artigos, vídeos, e-mails, etc  = Jean
 
 -----------------------------------------------------
 

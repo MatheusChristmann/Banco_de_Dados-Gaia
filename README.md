@@ -1,35 +1,49 @@
-# Gaia
+# <center> 💊 Gaia 💉 </center>
 
-Sistema para gerenciamento de Farmácias
+<p> <center> Sistema para gerenciamento de Farmácias e Drograrias</center> </p>
+
+#
 
 ## 🚀 Começando
 
-<p1>
-&nbsp&nbsp&nbsp&nbspO Projeto Gaia se trata de um trabalho avaliativo para a matéria de Banco de Dados 1 da Universidade do Oeste de Santa Catarina (UNOESC). O Objetivo desse trabalho é a criação e desenvolvimento de um Banco de Dados para um ramo específico escolhido pelos envolvidos, ou seja, os alunos/desenvolvedores.
-</p1>
-<p1>
-  
-</p1>
+<p align="justify">
+&nbsp&nbsp&nbsp&nbsp
+O Projeto Gaia se trata de um trabalho avaliativo para a matéria de Banco de Dados 1 da Universidade do Oeste de Santa Catarina (UNOESC). O Objetivo desse trabalho é a criação e desenvolvimento de um Banco de Dados para Gerenciamento de Farmácias e Drogarias, contemplando todo o processo que vai desde a coleta de requisitos até a geração de relatórios com o Banco de Dados completamente construído.
+</p>
+
+#
+
+## 🔎 Um pouco do que você encontrará por aqui:
+- Coleta e Levantamento de Requisitos
+- O Modelo Relacional
+- Dicionário de Dados
+- Scripts de Criação do Banco de Dados e suas Tabelas
+- Scripts de Inserção de Dados
+- Comandos de consulta SQL para Geração de Relatórios
+- Trabalho escrito descrevendo todo o processo para viabilização do Projeto
+
+#
 
 ## 📦 Desenvolvimento
 
 Descrição do desenvolvimento
 
+#
+
 ## 🛠️ Ferramentas Utilizadas
 
 - Visual Paradigm
-- PostgreeSQL
+- PostgreSQL
 - DBeaver
+- WPS Office
+- Visual Studio Code
+- GenerateData
+
+#
 
 ## ☕ Usabilidade
 
-<p1>
-Aqui neste repositório você vai encontrar todos os arquivos referentes ao Projeto Gaia, sendo eles:
-</p1>
-
--
--
--
+#
 
 ## ✒️ Autores
 
@@ -64,7 +78,12 @@ Desenvolvedores do Projeto:
   </tr>
 </table>
 
+#
+
 ## 🎁 Agradecimentos
 
-Agradecimentos
+<p align="justify">
+&nbsp&nbsp&nbsp&nbsp
+Gostaríamos de reservar este espaço para agradecer a todos os envolvidos, professores e colegas, no Projeto Gaia que nos auxiliaram durante o processo de desenvolvimento e contribuíram para finalização deste trabalho. Agradecemos especialmente a farmácia entrevistada por cederem tempo e nos repassarem as informações necessárias para dar andamento ao projeto!
+</p>
 
