@@ -1,3 +1,5 @@
+/* Dropando as Chaves Estrangeiras */
+
 alter table CEP 
 	drop constraint CEP_COD_MUNICIPIO_FK;
 
@@ -75,6 +77,8 @@ alter table PRODUTO_MOVIMENTO
 
 -------------------------------------------------------------
 
+/* Dropando as Tabelas */
+
 drop table if exists CEP cascade;
 
 drop table if exists ESTADO cascade;
@@ -114,3 +118,9 @@ drop table if exists COMPRA cascade;
 drop table if exists COMPRA_ITEM cascade;
 
 drop table if exists PRODUTO_MOVIMENTO cascade;
+
+-------------------------------------------------------------
+
+/* Dropando a Base de Dados */
+
+drop database gaia;
