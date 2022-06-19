@@ -1,0 +1,36 @@
+TAREFAS A SEREM FEITAS:
+
+● Criação de restrição unique na chave estrangeira composta de Venda Item e Compra Item
+
+● Criar indices nas tabelas (Todas FK's que não são PK's serão Indexadas, verificar outras possibilidades)
+
+● Ajustar versão final do README = Matheus
+
+● Inserção dos Dados = Michel
+
+● Verificação dos Dados inseridos
+
+● Verificar e testar Relatórios Específicos do Sistema
+
+● Lista de ilustrações(Printar tabelas e oque mais for necessário)
+
+● Parte final do Desenvolvimento = Matheus
+
+● Unir todos os arquivos do Desenvolvimento
+
+● Conclusão: conclusões a respeito do trabalho = Jean
+
+● Referências: livros, artigos, vídeos, e-mails, etc
+
+-----------------------------------------------------
+ALTERAÇÃO NO MODELO RELACIONAL:
+
+Após realizada cada alteração na estrutura do Banco de Dados deve se avaliar os seguintes requisitos abaixo:
+
+● A Tabela continua normalizada? (1FN, 2FN e 3FN)
+● O tipo de dado das colunas continua correto?
+● A ligação da tabela com as demais possui lógica?
+● Atende aos requisitos da entrevista?
+● Atende aos relatórios que devem ser retirados?
+
+-----------------------------------------------------

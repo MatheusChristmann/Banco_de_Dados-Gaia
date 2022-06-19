@@ -1,3 +1,7 @@
+/* Criação da Base de Dados */
+create database gaia;
+----------------------------------------------------------------
+/* Criação das Tabelas */
 create table ESTADO (
 	EST_COD serial
  	constraint EST_COD_PK primary key, 
@@ -571,6 +575,4 @@ comment on table PRODUTO_MOVIMENTO
 	comment on column PRODUTO_MOVIMENTO.PRM_QTD_PRODUTO 
 		is 'Quantidade do produto que está sofrendo movimentação.';	
 
-------------------------------------------------------------------------------------------------------------------------
-
---FIM...ou sera que não.
+----------------------------------------------------------------
