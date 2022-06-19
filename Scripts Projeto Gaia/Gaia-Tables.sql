@@ -171,7 +171,7 @@ create table ENDERECO_FUN (
   ENF_BAIRRO varchar(50), 
   ENF_RUA varchar(50), 
   ENF_NUMERO numeric(6, 0), 
-  ENF_TELEFONE varchar(8), 
+  ENF_TELEFONE varchar(9), 
   ENF_CELULAR varchar(12),
   ENF_EMAIL varchar(40), 
   ENF_CEP varchar(9) not null
@@ -223,7 +223,7 @@ create table ENDERECO_PES (
   ENP_BAIRRO varchar(50), 
   ENP_RUA varchar(50), 
   ENP_NUMERO numeric(6, 0), 
-  ENP_TELEFONE varchar(8), 
+  ENP_TELEFONE varchar(9), 
   ENP_CELULAR varchar(12), 
   ENP_EMAIL varchar(40), 
   ENP_CEP varchar(9) not null
@@ -647,9 +647,6 @@ create index PRO_TIP_TAR_SK
 on PRODUTO(PRO_TIP_TAR);
 
 create index PRO_TIP_MED_SK
-on PRODUTO(PRO_TIP_MED);
-
-create indeX PRO_TIP_MED_SK
 on PRODUTO(PRO_TIP_MED);
 
 create index PRO_PRI_ATIVO_SK 
