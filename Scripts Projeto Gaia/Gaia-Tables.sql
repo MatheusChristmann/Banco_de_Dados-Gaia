@@ -1,3 +1,5 @@
+create table gaia;
+
 create table ESTADO (
 	EST_COD serial
  	constraint EST_COD_PK primary key, 
