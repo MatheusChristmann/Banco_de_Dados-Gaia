@@ -1,7 +1,3 @@
-/* Criação da Base de Dados */
-create database gaia;
-----------------------------------------------------------------
-/* Criação das Tabelas */
 create table ESTADO (
 	EST_COD serial
  	constraint EST_COD_PK primary key, 
@@ -520,15 +516,15 @@ create table COMPRA_ITEM (
   COI_UNITARIO_ITEM numeric(8, 2) not null, 
   COI_TOTAL_ITEM numeric(8, 2) not null
 );
- 
-alter table COMPRA_ITEM 
-add constraint COI_PRO_COD_FK foreign key (COI_PRO_COD) 
-references PRODUTO (PRO_COD);
 
 alter table COMPRA_ITEM 
 add constraint COI_COM_NUMERO_FK foreign key (COI_COM_NUMERO) 
 references COMPRA (COM_NUMERO);
- 
+
+alter table COMPRA_ITEM 
+add constraint COI_PRO_COD_FK foreign key (COI_PRO_COD) 
+references PRODUTO (PRO_COD);
+
  	
 comment on table COMPRA_ITEM 
 	is 'Itens(Produtos) da Compra.';
@@ -575,4 +571,6 @@ comment on table PRODUTO_MOVIMENTO
 	comment on column PRODUTO_MOVIMENTO.PRM_QTD_PRODUTO 
 		is 'Quantidade do produto que está sofrendo movimentação.';	
 
-----------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+--FIM...ou sera que não.

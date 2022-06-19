@@ -6,7 +6,6 @@ insert into estado values
   (2, 'SC', 'Santa Catarina'),
   (3, 'SP', 'São Paulo');
 
-select * from ESTADO ;
 
 -----------------------------------
 insert into municipio values
@@ -16,7 +15,6 @@ insert into municipio values
   (4,'Ametista do sul',1),
   (5,'São Paulo',3);
 
-select * from MUNICIPIO ;
 
 -----------------------------------
 insert into cep values
@@ -26,7 +24,6 @@ insert into cep values
   ('98465-000', 4),
   ('01153-000', 5);
 
-select * from CEP ;
 
 -----------------------------------
 insert into cargo values
@@ -35,7 +32,6 @@ insert into cargo values
   (3,'Balconista', 1657.00),
   (4,'Auxiliares Administrativo', 1516.00);
 
-select * from CARGO ;
 
 -----------------------------------
 insert into funcionario values 
@@ -45,7 +41,6 @@ insert into funcionario values
   (4, 'Lunea Barker', '41664601696', '4746512', '16/2/1998', 'F', 1),
   (5, 'Nevada Hampton', '68179216011', '5672848', '26/11/2000', 'F', 2);
 
-select * from FUNCIONARIO ;
  
 -----------------------------------
 insert into PESSOA values 
@@ -62,11 +57,10 @@ insert into PESSOA values
   (11, 'Hall Santos', 'F', '20243940983', null, 'F', '19/09/1983', '07/12/2016'),
   (12, 'Christian Oliveira', 'F', '54449225105', null, 'M', '15/06/1986', '08/10/2014'),
   (13, 'Bradley de Freitas', 'F', '65055154593', null, 'M', '20/12/1998', '24/11/2011'),
-  (14, 'Scott G. Mota', 'F', '04676257915', null, 'M', '25/09/1989', '19/11/2020'),
+  (14, 'Scott G. Mota', 'F', '14676257915', null, 'M', '25/09/1989', '19/11/2020'),
   (15, 'Ultrices Posuere Cubilia Foundation', 'J', '46614370640211', '217441885', null, '11/12/1985', '23/07/2015'),
   (16, 'Pellentesque Eget Industries', 'J', '68975936914348', '163334175', null, '25/10/1997', '10/09/2015');
 
-select * from PESSOA ;
 
 -----------------------------------
 insert into TIPO_ENDERECO values 
@@ -75,7 +69,6 @@ insert into TIPO_ENDERECO values
 (3, 'Comercial'),
 (4, 'Cobrança');
 
-select * from TIPO_ENDERECO ;
 
 -----------------------------------
 insert into ENDERECO_FUN values 
@@ -87,7 +80,6 @@ insert into ENDERECO_FUN values
   (6, 2, 4, 'Centro', 'Presidente Fin', 613, '28188335', '14-912314567', 'tellus@outlook.com', '89890-000'),
   (7, 3, 3, 'Centro', 'Avenida 23', 38, '65842156', '43-961722564', 'congue.turpis@hotmail.com', '89908-000');
 
-select * from ENDERECO_FUN ;
 
 -----------------------------------
 insert into ENDERECO_PES values 
@@ -108,14 +100,14 @@ insert into ENDERECO_PES values
   (15,4,6,'Interior',null,null,'77910382','87-911066356','eget@hotmail.com','89908-000'),
   (16,1,15,'Santa_Maria','France',1257,'66785815','74-941818856','risus@google.com','89908-000');
 
-select * from ENDERECO_PES ;
-
+ 
 -----------------------------------
 insert into PRINCIPIO_ATIVO values
-(1, 'Paracetamol');
+(1, 'Paracetamol'),
+(2, 'Diazepam'),
+(3, 'Alopurinol'),
+(4, 'Guaifenesina');
 
-
-select * from PRINCIPIO_ATIVO ; 
 
 -----------------------------------
 insert into TIPO_MEDICAMENTO values 
@@ -123,7 +115,6 @@ insert into TIPO_MEDICAMENTO values
 (2, 'Genéricos'),
 (3, 'Similares');
 
-select * from TIPO_MEDICAMENTO ;
 
 -----------------------------------
 insert into TIPO_TARJA values 
@@ -132,7 +123,6 @@ insert into TIPO_TARJA values
 (3, 'Tarja Vermelha'),
 (4, 'Tarja Preta');
 
-select * from TIPO_TARJA;
 
 -----------------------------------
 insert into UNIDADE_MEDIDA values 
@@ -142,13 +132,15 @@ insert into UNIDADE_MEDIDA values
 (4, 'L- Litro'),
 (5, 'ml- mililitro');
 
-select * from UNIDADE_MEDIDA ;
 
 -----------------------------------
 insert into PRODUTO values 
-(1, 'paracetamol', 'Medicamento para alívio de dores de cabeça', 4.99, 5000, 750, 1, 2, 2, 3, 500);
+(1, 'paracetamol', 'Medicamento para alívio de dores de cabeça', 4.99, 0, 750, 1, 2, 2, 3, 500),
+(2, 'Alopurinol', 'Medicamento usado para controlar Ácido Úrico', 7.99, 0, 100, 3, 2, 3, 3, 30),
+(3, 'Valium', 'Medicamento para alívio da ansiedade', 23.99, 0, 10, 2, 1, 4, 3, 100),
+(4,'paracetamol', 'Medicamento para alívio de dores de cabeça', 3.99, 0, 500, 1, 2, 2, 3, 500),
+(5, 'Xarope Vick', 'Ajuda na eliminação do catarro em tosses', 15.00, 0, 120, 4, 2, 1, 5, 50);
 
-select * from PRODUTO ;
 
 -----------------------------------
 insert into TIPO_PAGAMENTO values
@@ -160,38 +152,127 @@ insert into TIPO_PAGAMENTO values
 (6, 'Boleto Bancário ');
 
 
-select * from TIPO_PAGAMENTO ;
-
 -----------------------------------
-insert into VENDA values 
-(1, 2, '14/02/2022 14:30:23', 1, 5, null);
+insert into VENDA values
+(1, 2, '07/04/2018 13:51:57', 2, 3, null),
+(2, 5, '29/01/2019 09:59:49', 6, 2, null),
+(3, 8, '28/12/2020 19:00:47', 4, 5, null),
+(4, 9, '02/02/2021 07:25:06', 3, 3, null),
+(5, 10, '19/07/2021 14:39:38', 1, 4, null),
+(6, 11, '25/12/2021 10:05:21', 2, 2, null),
+(7, 2, '14/02/2022 14:30:23', 1, 5, null), 
+(8, 14, '23/03/2022 15:39:53', 4, 4, null);
 
-select * from VENDA ;
 
 -----------------------------------
 insert into VENDA_ITEM values 
+(1, 1, 2, 20, 7.99, 159.80),
+(2, 2, 1, 10, 4.99, 49.90),
+(3, 3, 5, 60, 15.00, 900.00),
+(4, 4, 3, 10, 23.99, 239.90),
+(5, 5, 4, 200, 3.99, 798.00),
+(6, 6, 2, 5, 7.99, 39.95),
+(7, 7, 1, 30, 4.99, 149.70),
+(8, 8, 5, 15, 15.00, 225.00);
 
-delete from VENDA_ITEM 
-where VEI_ID = 1;
-
-select * from VENDA_ITEM ;
 
 -----------------------------------
 insert into COMPRA values 
-(1, 4, '03/01/2022 07:40:05', 5, 4);
+(1, 4, '01/01/2012 07:40:05', 5, 4),
+(2, 15, '01/01/2013 07:50:45', 5, 4),
+(3, 15, '01/09/2013 08:00:02', 5, 4),
+(4, 3, '01/04/2014 07:42:23', 5, 4),
+(5, 16, '01/06/2020 07:35:59', 5, 4),
+(6, 16, '01/06/2020 07:37:00', 5, 4);
 
-select * from COMPRA ;
 
 -----------------------------------
 insert into COMPRA_ITEM values 
+(1, 1, 1, 3000, 2.99, 8970),
+(2, 2, 2, 500, 3.50, 1750),
+(3, 3, 3, 2000, 10, 20000),
+(4, 4, 4, 4000, 1.50, 6000),
+(5, 5, 1, 2000, 3.00, 6000),
+(6, 6, 5, 1000, 7.00, 7000);
 
-
-select * from COMPRA_ITEM ;
 
 -----------------------------------
 insert into PRODUTO_MOVIMENTO values
-(1, '03/01/2022 07:40:05', 1, 4, +5000),
-(2, '14/02/2022 14:30:23', 1, 2, -20);
+(1, '01/01/2012 07:40:05', 1, 4, 3000),
+(2, '01/01/2013 07:50:45', 2, 4, 500),
+(3, '01/09/2013 08:00:02', 3, 4, 2000),
+(4, '01/04/2014 07:42:23', 4, 4, 4000),
+(5, '07/04/2018 13:51:57', 2, 3, -20),
+(6, '29/01/2019 09:59:49', 1, 2, -10),
+(7, '01/06/2020 07:35:59', 4, 4, 2000),
+(8, '01/06/2020 07:37:00', 5, 4, 1000),
+(9, '28/12/2020 19:00:47', 5, 5, -60),
+(10, '02/02/2021 07:25:06', 3, 3, -10),
+(11, '19/07/2021 14:39:38', 4, 4, -200),
+(12, '25/12/2021 10:05:21', 2, 2, -5),
+(13, '14/02/2022 14:30:23', 1, 5, -30), 
+(14, '23/03/2022 15:39:53', 5, 4, -15);
 
-select * from PRODUTO_MOVIMENTO ;
+
 -----------------------------------
+
+---------------Compras--------------------
+--Alguns updates para deixar a quantidade +/- realista pois foram realizadas algumas transações
+
+update produto
+set pro_quantidade = pro_quantidade + 3000
+where pro_cod = 1;
+
+update produto
+set pro_quantidade = pro_quantidade + 500
+where pro_cod = 2;
+
+update produto
+set pro_quantidade = pro_quantidade + 2000
+where pro_cod = 3;
+
+update produto
+set pro_quantidade = pro_quantidade + 4000
+where pro_cod = 4;
+
+update produto
+set pro_quantidade = pro_quantidade + 2000
+where pro_cod = 1;
+
+update produto
+set pro_quantidade = pro_quantidade + 1000
+where pro_cod = 5;
+
+----------------Vendas--------------------
+update produto
+set pro_quantidade = pro_quantidade - 20
+where pro_cod = 2;
+
+update produto
+set pro_quantidade = pro_quantidade - 10
+where pro_cod = 1;
+
+update produto
+set pro_quantidade = pro_quantidade - 60
+where pro_cod = 5;
+
+update produto
+set pro_quantidade = pro_quantidade - 10
+where pro_cod = 3;
+
+update produto
+set pro_quantidade = pro_quantidade - 200
+where pro_cod = 4;
+
+update produto
+set pro_quantidade = pro_quantidade - 5
+where pro_cod = 2;
+
+update produto
+set pro_quantidade = pro_quantidade - 30
+where pro_cod = 1;
+
+update produto
+set pro_quantidade = pro_quantidade - 15
+where pro_cod = 5;
+
