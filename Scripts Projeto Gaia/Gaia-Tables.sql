@@ -1,4 +1,4 @@
-create table gaia;
+create database gaia;
 
 create table ESTADO (
 	EST_COD serial
@@ -576,3 +576,83 @@ comment on table PRODUTO_MOVIMENTO
 ------------------------------------------------------------------------------------------------------------------------
 
 --FIM...ou sera que não.
+
+create index PRM_PESSOA_SK
+on PRODUTO_MOVIMENTO(PRM_PESSOA);
+
+create index PRM_PRODUTO_SK
+on PRODUTO_MOVIMENTO(PRM_PRODUTO);
+
+create index ENP_PESSOA_SK
+on ENDERECO_PES(ENP_PESSOA);
+
+create index ENF_FUNCIONARIO_SK
+on ENDERECO_FUN(ENF_FUNCIONARIO);
+
+create index ENP_CEP_SK 
+on ENDERECO_PES(ENP_CEP);
+
+create index ENP_TIP_END_SK 
+on ENDERECO_PES(ENP_TIP_END);
+
+create index ENF_CEP_SK
+on ENDERECO_FUN(ENF_CEP);
+
+create index ENF_TIP_END_SK
+on ENDERECO_FUN(ENF_TIP_END);
+
+create index COD_MUNICIPIO_SK
+on CEP(COD_MUNICIPIO);
+
+create index COD_ESTADO_SK 
+on MUNICIPIO(COD_ESTADO);
+
+create index COD_FUNCIONARIO_SK 
+on VENDA(COD_FUNCIONARIO);
+
+create index COD_FUNCIONARIO_SK
+on COMPRA(COD_FUNCIONARIO);
+
+create index COD_CARGO_SK
+on FUNCIONARIO(COD_CARGO);
+
+create index VEI_VEN_NUMERO_SK
+on VENDA_ITEM(VEI_VEN_NUMERO);
+
+create index VEI_PRO_COD_SK
+on VENDA_ITEM(VEI_PRO_COD);
+
+create index COD_PAGAMENTO_SK
+on VENDA(COD_PAGAMENTO);
+
+create index COD_PESSOA_SK
+on VENDA(COD_PESSOA);
+
+create index COD_PESSOA_SK
+on COMPRA(COD_PESSOA);
+
+create index COD_PAGAMENTO_SK
+on COMPRA(COD_PAGAMENTO);
+
+create index COI_PRO_COD_SK 
+on COMPRA_ITEM(COI_PRO_COD);
+
+create index COI_COM_NUMERO_SK 
+on COMPRA_ITEM(COI_COM_NUMERO);
+
+create index PRO_UNI_MED_SK
+on PRODUTO(PRO_UNI_MED);
+
+create index PRO_TIP_TAR_SK
+on PRODUTO(PRO_TIP_TAR);
+
+create index PRO_TIP_MED_SK
+on PRODUTO(PRO_TIP_MED);
+
+create indeX PRO_TIP_MED_SK
+on PRODUTO(PRO_TIP_MED);
+
+create index PRO_PRI_ATIVO_SK 
+on PRODUTO(PRO_PRI_ATIVO);
+
+	
