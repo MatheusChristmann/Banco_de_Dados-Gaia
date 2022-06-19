@@ -1,4 +1,10 @@
+/* Criação da Base de Dados */
+
 create database gaia;
+
+----------------------------------------------------------------
+
+/* Criação das Tabelas */
 
 create table ESTADO (
 	EST_COD serial
@@ -371,7 +377,7 @@ comment on table PRODUTO
 	comment on column PRODUTO.PRO_QUANTIDADE 
 		is 'Quantidade em estoque do produto.';
 	comment on column PRODUTO.PRO_PESO 
-		is 'Peso bruto do produto.';
+		is 'Peso bruto do produto em gramas.';
 	comment on column PRODUTO.PRO_PRI_ATIVO 
 		is 'Princípio ativo do produto.';
 	comment on column PRODUTO.PRO_TIP_MED 
@@ -573,9 +579,9 @@ comment on table PRODUTO_MOVIMENTO
 	comment on column PRODUTO_MOVIMENTO.PRM_QTD_PRODUTO 
 		is 'Quantidade do produto que está sofrendo movimentação.';	
 
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
---FIM...ou sera que não.
+/* Criação dos Índices */
 
 create index PRM_PESSOA_SK
 on PRODUTO_MOVIMENTO(PRM_PESSOA);
@@ -607,10 +613,10 @@ on CEP(COD_MUNICIPIO);
 create index COD_ESTADO_SK 
 on MUNICIPIO(COD_ESTADO);
 
-create index COD_FUNCIONARIO_SK 
+create index COD_FUNCIONARIO_VENDA_SK 
 on VENDA(COD_FUNCIONARIO);
 
-create index COD_FUNCIONARIO_SK
+create index COD_FUNCIONARIO_COMPRA_SK
 on COMPRA(COD_FUNCIONARIO);
 
 create index COD_CARGO_SK
@@ -622,16 +628,16 @@ on VENDA_ITEM(VEI_VEN_NUMERO);
 create index VEI_PRO_COD_SK
 on VENDA_ITEM(VEI_PRO_COD);
 
-create index COD_PAGAMENTO_SK
+create index COD_PAGAMENTO_VENDA_SK
 on VENDA(COD_PAGAMENTO);
 
-create index COD_PESSOA_SK
+create index COD_PESSOA_VENDA_SK
 on VENDA(COD_PESSOA);
 
-create index COD_PESSOA_SK
+create index COD_PESSOA_COMPRA_SK
 on COMPRA(COD_PESSOA);
 
-create index COD_PAGAMENTO_SK
+create index COD_PAGAMENTO_COMPRA_SK
 on COMPRA(COD_PAGAMENTO);
 
 create index COI_PRO_COD_SK 
@@ -650,6 +656,4 @@ create index PRO_TIP_MED_SK
 on PRODUTO(PRO_TIP_MED);
 
 create index PRO_PRI_ATIVO_SK 
-on PRODUTO(PRO_PRI_ATIVO);
-
-	
+on PRODUTO(PRO_PRI_ATIVO); 

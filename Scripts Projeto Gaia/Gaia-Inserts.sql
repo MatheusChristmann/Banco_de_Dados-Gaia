@@ -1,11 +1,13 @@
---https://generatedata.com/generator
---Empresa Gaia fundada em 2010
+/* Gerador de Dados utilizado: https://generatedata.com/generator
+
+Banco de Dados Gaia fundado em 2010 */
+
+/* Inserções de Dados */
 
 insert into estado values
   (1, 'RS', 'Rio Grande do Sul'),
   (2, 'SC', 'Santa Catarina'),
   (3, 'SP', 'São Paulo');
-
 
 -----------------------------------
 insert into municipio values
@@ -15,7 +17,6 @@ insert into municipio values
   (4,'Ametista do sul',1),
   (5,'São Paulo',3);
 
-
 -----------------------------------
 insert into cep values
   ('89890-000', 1),
@@ -24,24 +25,21 @@ insert into cep values
   ('98465-000', 4),
   ('01153-000', 5);
 
-
 -----------------------------------
 insert into cargo values
   (1,'Gerente', 2811.00),
   (2,'Atendente', 1495.00),
   (3,'Balconista', 1657.00),
-  (4,'Auxiliares Administrativo', 1516.00);
-
+  (4,'Auxiliar Administrativo', 1516.00);
 
 -----------------------------------
 insert into funcionario values 
-  (1, 'Dalton Noe', '13281178590', '0935706', '27/05/1997', 'M', 3),
+  (1, 'Dalton Noe', '13281178590', '9035706', '27/05/1997', 'M', 3),
   (2, 'Drew Carpenter', '90497266366', '5244285', '10/12/1998', 'M', 2),
   (3, 'Kristen P. Simmons', '85431825412', '1765224', '10/7/1990', 'F', 4),
   (4, 'Lunea Barker', '41664601696', '4746512', '16/2/1998', 'F', 1),
   (5, 'Nevada Hampton', '68179216011', '5672848', '26/11/2000', 'F', 2);
 
- 
 -----------------------------------
 insert into PESSOA values 
   (1, 'Purus Foundation', 'J', '61623825779672', '266168678', null, '18/11/1972', '07/05/2018'),  
@@ -61,7 +59,6 @@ insert into PESSOA values
   (15, 'Ultrices Posuere Cubilia Foundation', 'J', '46614370640211', '217441885', null, '11/12/1985', '23/07/2015'),
   (16, 'Pellentesque Eget Industries', 'J', '68975936914348', '163334175', null, '25/10/1997', '10/09/2015');
 
-
 -----------------------------------
 insert into TIPO_ENDERECO values 
 (1, 'Residencial Fixo'),
@@ -69,38 +66,35 @@ insert into TIPO_ENDERECO values
 (3, 'Comercial'),
 (4, 'Cobrança');
 
-
 -----------------------------------
 insert into ENDERECO_FUN values 
-  (1, 3, 4, 'Santa Maria', 'Jesus', 70, '16466158', '71-966367528', 'in.lobortis.tellus@outlook.com', '89908-000'),
-  (2, 1, 3, 'Centro', 'Fontain', 1036, '47273435', '15-926435112', 'in.felis@google.com', '89908-000'),
-  (3, 4, 2, 'Interbi', 'Weekned', 5, '54975334', '48-937231316', 'arcu.sed@google.com', '89900-000'),
-  (4, 3, 1, 'Ricaso', 'Samanta ', 680, '61071564', '74-967478756', 'blandit.mattis.cras@hotmail.com', '89890-000'),
-  (5, 1, 5, 'Centro', 'Vira Lobos', null, '80132591', '18-944726258', 'dictum.mi@google.com', '89908-000'),
-  (6, 2, 4, 'Centro', 'Presidente Fin', 613, '28188335', '14-912314567', 'tellus@outlook.com', '89890-000'),
-  (7, 3, 3, 'Centro', 'Avenida 23', 38, '65842156', '43-961722564', 'congue.turpis@hotmail.com', '89908-000');
-
+  (1, 3, 4, 'Santa Maria', 'Jesus', 70, '1646-6158', '71-966367528', 'in.lobortis.tellus@outlook.com', '89908-000'),
+  (2, 1, 3, 'Centro', 'Fontain', 1036, '4727-3435', '15-926435112', 'in.felis@google.com', '89908-000'),
+  (3, 4, 2, 'Interbi', 'Weekned', 5, '5497-5334', '48-937231316', 'arcu.sed@google.com', '89900-000'),
+  (4, 3, 1, 'Ricaso', 'Samanta ', 680, '6107-1564', '74-967478756', 'blandit.mattis.cras@hotmail.com', '89890-000'),
+  (5, 1, 5, 'Centro', 'Vira Lobos', null, '8013-2591', '18-944726258', 'dictum.mi@google.com', '89908-000'),
+  (6, 2, 4, 'Centro', 'Presidente Fin', 613, '2818-8335', '14-912314567', 'tellus@outlook.com', '89890-000'),
+  (7, 3, 3, 'Centro', 'Avenida 23', 38, '6584-2156', '43-961722564', 'congue.turpis@hotmail.com', '89908-000');
 
 -----------------------------------
 insert into ENDERECO_PES values 
-  (1,3,7,'Zone','Goosd',3638,'16466158','71-966367528','id.magna@hotmail.com','89890-000'),
-  (2,3,2,'Santa_Maria','La_sale',2188,'47273435','15-926435112','maecenas.libero@google.com','89890-000'),
-  (3,4,10,'Santa_Maria','Avenida_Brasail',754,'54975334','48-937231316','vel.arcu@outlook.com','89890-000'),
-  (4,3,1,'Interior', null, null,'61071564','74-967478756','mauris.ut@outlook.com','89900-000'),
-  (5,1,11,'Tec','Avenida_Brasail',4118,'80132591','18-944726258','in.magna@hotmail.com','89908-000'),
-  (6,2,4,'Zone','Avenida_Brasail',3573,'28188335','14-912314567','fermentum.risus@google.com','89908-000'),
-  (7,3,14,'Interlag','Goosd',1926,'65842156','43-961722564','adipiscing.elit@hotmail.com','89900-000'),
-  (8,2,13,'Interlag','Avenida_Brasail',3370,'86385576','42-948217794','commodo.tincidunt.nibh@outlook.com','89890-000'),
-  (9,2,3,'Interior',null,null,'76228968','62-992782774','nibh@hotmail.com','89908-000'),
-  (10,3,16,'Tec','Avenida_Brasail',3760,'63532298','52-978167262','tellus.aenean.egestas@hotmail.com','89890-000'),
-  (11,3,8,'Centro','La_sale',4921,'91366667','74-938326940','ultrices.posuere.cubilia@outlook.com','89890-000'),
-  (12,3,5,'Zone','Avenida_Brasail',911,'75213030','79-914535545','nunc.in.at@google.com','89900-000'),
-  (13,3,9,'Interlag','La_sale',3600,'64258802','55-941483887','molestie.sed@hotmail.com','89890-000'),
-  (14,1,12,'Interlag','La_sale',4945,'11914741','13-908134805','fringilla.ornare@hotmail.com','89890-000'),
-  (15,4,6,'Interior',null,null,'77910382','87-911066356','eget@hotmail.com','89908-000'),
-  (16,1,15,'Santa_Maria','France',1257,'66785815','74-941818856','risus@google.com','89908-000');
+  (1,3,7,'Zone','Goosd',3638,'1646-6158','71-966367528','id.magna@hotmail.com','89890-000'),
+  (2,3,2,'Santa_Maria','La_sale',2188,'4727-3435','15-926435112','maecenas.libero@google.com','89890-000'),
+  (3,4,10,'Santa_Maria','Avenida_Brasail',754,'5497-5334','48-937231316','vel.arcu@outlook.com','89890-000'),
+  (4,3,1,'Interior', null, null,'6107-1564','74-967478756','mauris.ut@outlook.com','89900-000'),
+  (5,1,11,'Tec','Avenida_Brasail',4118,'8013-2591','18-944726258','in.magna@hotmail.com','89908-000'),
+  (6,2,4,'Zone','Avenida_Brasail',3573,'2818-8335','14-912314567','fermentum.risus@google.com','89908-000'),
+  (7,3,14,'Interlag','Goosd',1926,'6584-2156','43-961722564','adipiscing.elit@hotmail.com','89900-000'),
+  (8,2,13,'Interlag','Avenida_Brasail',3370,'8638-5576','42-948217794','commodo.tincidunt.nibh@outlook.com','89890-000'),
+  (9,2,3,'Interior',null,null,'7622-8968','62-992782774','nibh@hotmail.com','89908-000'),
+  (10,3,16,'Tec','Avenida_Brasail',3760,'6353-2298','52-978167262','tellus.aenean.egestas@hotmail.com','89890-000'),
+  (11,3,8,'Centro','La_sale',4921,'9136-6667','74-938326940','ultrices.posuere.cubilia@outlook.com','89890-000'),
+  (12,3,5,'Zone','Avenida_Brasail',911,'7521-3030','79-914535545','nunc.in.at@google.com','89900-000'),
+  (13,3,9,'Interlag','La_sale',3600,'6425-8802','55-941483887','molestie.sed@hotmail.com','89890-000'),
+  (14,1,12,'Interlag','La_sale',4945,'1191-4741','13-908134805','fringilla.ornare@hotmail.com','89890-000'),
+  (15,4,6,'Interior',null,null,'7791-0382','87-911066356','eget@hotmail.com','89908-000'),
+  (16,1,15,'Santa_Maria','France',1257,'6678-5815','74-941818856','risus@google.com','89908-000');
 
- 
 -----------------------------------
 insert into PRINCIPIO_ATIVO values
 (1, 'Paracetamol'),
@@ -108,13 +102,11 @@ insert into PRINCIPIO_ATIVO values
 (3, 'Alopurinol'),
 (4, 'Guaifenesina');
 
-
 -----------------------------------
 insert into TIPO_MEDICAMENTO values 
 (1,'Referência'), 
-(2, 'Genéricos'),
-(3, 'Similares');
-
+(2, 'Genérico'),
+(3, 'Similar');
 
 -----------------------------------
 insert into TIPO_TARJA values 
@@ -123,24 +115,20 @@ insert into TIPO_TARJA values
 (3, 'Tarja Vermelha'),
 (4, 'Tarja Preta');
 
-
 -----------------------------------
 insert into UNIDADE_MEDIDA values 
-(1, 'Kg- Quilo'),
-(2, 'g- Grama'),
-(3, 'mg- Miligrama'),
-(4, 'L- Litro'),
-(5, 'ml- mililitro');
-
+(1, 'Quilograma'),
+(2, 'Unidade'),
+(3, 'Caixa'),
+(4, 'Litro');
 
 -----------------------------------
 insert into PRODUTO values 
-(1, 'paracetamol', 'Medicamento para alívio de dores de cabeça', 4.99, 0, 750, 1, 2, 2, 3, 500),
-(2, 'Alopurinol', 'Medicamento usado para controlar Ácido Úrico', 7.99, 0, 100, 3, 2, 3, 3, 30),
-(3, 'Valium', 'Medicamento para alívio da ansiedade', 23.99, 0, 10, 2, 1, 4, 3, 100),
-(4,'paracetamol', 'Medicamento para alívio de dores de cabeça', 3.99, 0, 500, 1, 2, 2, 3, 500),
-(5, 'Xarope Vick', 'Ajuda na eliminação do catarro em tosses', 15.00, 0, 120, 4, 2, 1, 5, 50);
-
+(1, 'Paracetamol P750', 'Medicamento para alívio de dores de cabeça', 4.99, 0, 0.75, 1, 2, 2, 2, 500),
+(2, 'Alopurinol', 'Medicamento usado para controlar Ácido Úrico', 7.99, 0, 0.10, 3, 2, 3, 2, 30),
+(3, 'Valium', 'Medicamento para alívio da ansiedade', 23.99, 0, 0.10, 2, 1, 4, 2, 100),
+(4,'Paracetamol P500', 'Medicamento para alívio de dores de cabeça', 3.99, 0, 0.50, 1, 2, 2, 2, 500),
+(5, 'Xarope Vick', 'Ajuda na eliminação do catarro em tosses', 15.00, 0, 0.12, 4, 2, 1, 2, 50);
 
 -----------------------------------
 insert into TIPO_PAGAMENTO values
@@ -150,7 +138,6 @@ insert into TIPO_PAGAMENTO values
 (4, 'Pix'), 
 (5, 'Cheque'), 
 (6, 'Boleto Bancário ');
-
 
 -----------------------------------
 insert into VENDA values
@@ -163,7 +150,6 @@ insert into VENDA values
 (7, 2, '14/02/2022 14:30:23', 1, 5, null), 
 (8, 14, '23/03/2022 15:39:53', 4, 4, null);
 
-
 -----------------------------------
 insert into VENDA_ITEM values 
 (1, 1, 2, 20, 7.99, 159.80),
@@ -175,7 +161,6 @@ insert into VENDA_ITEM values
 (7, 7, 1, 30, 4.99, 149.70),
 (8, 8, 5, 15, 15.00, 225.00);
 
-
 -----------------------------------
 insert into COMPRA values 
 (1, 4, '01/01/2012 07:40:05', 5, 4),
@@ -185,7 +170,6 @@ insert into COMPRA values
 (5, 16, '01/06/2020 07:35:59', 5, 4),
 (6, 16, '01/06/2020 07:37:00', 5, 4);
 
-
 -----------------------------------
 insert into COMPRA_ITEM values 
 (1, 1, 1, 3000, 2.99, 8970),
@@ -194,7 +178,6 @@ insert into COMPRA_ITEM values
 (4, 4, 4, 4000, 1.50, 6000),
 (5, 5, 1, 2000, 3.00, 6000),
 (6, 6, 5, 1000, 7.00, 7000);
-
 
 -----------------------------------
 insert into PRODUTO_MOVIMENTO values
@@ -215,9 +198,9 @@ insert into PRODUTO_MOVIMENTO values
 
 -----------------------------------
 
----------------Compras--------------------
---Alguns updates para deixar a quantidade +/- realista pois foram realizadas algumas transações
+/*  Updates para realizar as movimentações de produtos  */
 
+---------------Compras--------------------
 update produto
 set pro_quantidade = pro_quantidade + 3000
 where pro_cod = 1;
@@ -274,4 +257,3 @@ where pro_cod = 1;
 update produto
 set pro_quantidade = pro_quantidade - 15
 where pro_cod = 5;
-
