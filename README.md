@@ -1,11 +1,10 @@
-# <center> 💊 Gaia 💉 </center>
+# <p align="center"> <strong> 💊  Gaia  💉 </strong> </p>
 
-<p> <center> Sistema para gerenciamento de Farmácias e Drograrias</center> </p>
+<p align="center"> <strong> Sistema para Gerenciamento de Farmácias e Drograrias </strong> </center> </p>
 
 #
 
-## 🚀 Começando
-
+### 🚀 Começando 
 <p align="justify">
 &nbsp&nbsp&nbsp&nbsp
 O Projeto Gaia se trata de um trabalho avaliativo para a matéria de Banco de Dados 1 da Universidade do Oeste de Santa Catarina (UNOESC). O Objetivo desse trabalho é a criação e desenvolvimento de um Banco de Dados para Gerenciamento de Farmácias e Drogarias, contemplando todo o processo que vai desde a coleta de requisitos até a geração de relatórios com o Banco de Dados completamente construído.
@@ -13,7 +12,7 @@ O Projeto Gaia se trata de um trabalho avaliativo para a matéria de Banco de Da
 
 #
 
-## 🔎 Um pouco do que você encontrará por aqui:
+### 🔎 Um pouco do que você encontrará por aqui:
 - Coleta e Levantamento de Requisitos
 - O Modelo Relacional
 - Dicionário de Dados
@@ -24,13 +23,22 @@ O Projeto Gaia se trata de um trabalho avaliativo para a matéria de Banco de Da
 
 #
 
-## 📦 Desenvolvimento
+### 📦 Estrutura de Pastas
 
-Descrição do desenvolvimento
+- 📁 Scripts
+  - 📄 Gaia-Tables (Scripts de criação da Base de Dados, tabelas, constraints e índices)
+  - 📄 Gaia-Inserts (Scripts de Inserção de Dados)
+  - 📄 Gaia-Drops (Scripts de exclusão de tabelas)
+- 📁 Trabalho Escrito
+  - 📄 Projeto Gaia (Documentação e descrição do processo de desenvolvimento do trabalho)
+  - 📄 Imagens (Imagens utilizadas no trabalho escrito)
+- 📁 Modelo Relacional
+  - 📄 Gaia (Modelo Relacional do Banco de Dados)
+  - 📄 Dicionário de Dados (Documentação das tabelas e colunas do Modelo Relacional)
 
 #
 
-## 🛠️ Ferramentas Utilizadas
+### 🛠️ Ferramentas Utilizadas
 
 - Visual Paradigm
 - PostgreSQL
@@ -41,11 +49,7 @@ Descrição do desenvolvimento
 
 #
 
-## ☕ Usabilidade
-
-#
-
-## ✒️ Autores
+### ✒️ Autores
 
 Desenvolvedores do Projeto:
 
@@ -80,7 +84,7 @@ Desenvolvedores do Projeto:
 
 #
 
-## 🎁 Agradecimentos
+### 🎁 Agradecimentos
 
 <p align="justify">
 &nbsp&nbsp&nbsp&nbsp
