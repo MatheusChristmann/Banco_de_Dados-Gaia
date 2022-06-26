@@ -1,6 +1,3 @@
--- ANALISAR CADA RELATÓRIO E TESTAR COM OS INSERTS
-
-
 /* RELATÓRIO 1
 
 Relacionar o código, nome e tipo de todos os medicamentos. Ordene o relatório de forma ascendente pelo nome */
@@ -19,7 +16,7 @@ order by pro_nome
 Relacionar o nome do medicamento e o nome do fornecedor para todos os medicamentos. Filtre somente produtos com estoque maior
 que 10. Ordene o relatório de forma descendente pelo nome do fornecedor */
 
-select 
+select distinct
 	pro_nome,
 	pessoa.pes_nome 
 from produto
@@ -63,7 +60,7 @@ inner join venda on (venda.cod_pessoa = pessoa.pes_cod)
 inner join venda_item on (venda_item.vei_ven_numero = venda.ven_numero)
 where pessoa.pes_genero = 'M'
 and extract (year from age(current_date , pes_data_nascimento)) between 20 and 40
-and mod(extract(month from venda.ven_data),2) = 0
+and mod(extract(month from venda.ven_data),2) = 0 and extract(year from venda.ven_data) = 2021
 group by 1,2
 order by "Total em Compras" desc;
 

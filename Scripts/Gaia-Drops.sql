@@ -1,3 +1,5 @@
+/* Deletando as restrições */
+
 alter table CEP 
 	drop constraint CEP_COD_MUNICIPIO_FK;
 
@@ -74,6 +76,8 @@ alter table PRODUTO_MOVIMENTO
 	drop constraint PRM_PRODUTO_FK;
 
 -------------------------------------------------------------
+
+/* Deletando as tabelas */
 
 drop table if exists CEP cascade;
 
