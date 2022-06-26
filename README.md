@@ -25,16 +25,23 @@ O Projeto Gaia se trata de um trabalho avaliativo para a matéria de Banco de Da
 
 ### 📦 Estrutura de Pastas
 
+- 📄 Projeto Gaia (Documentação e descrição do processo de desenvolvimento do trabalho)
+
 - 📁 Scripts
   - 📄 Gaia-Tables (Scripts de criação da Base de Dados, tabelas, constraints e índices)
-  - 📄 Gaia-Inserts (Scripts de Inserção de Dados)
-  - 📄 Gaia-Drops (Scripts de exclusão de tabelas)
-- 📁 Trabalho Escrito
-  - 📄 Projeto Gaia (Documentação e descrição do processo de desenvolvimento do trabalho)
-  - 📄 Imagens (Imagens utilizadas no trabalho escrito)
+  - 📄 Gaia-Inserts (Scripts de inserção de Dados)
+  - 📄 Gaia-Drops (Scripts de exclusão de tabelas e da Base de Dados)
+  - 📄 Gaia-Consultas (Scripts de consulta/ relatórios do sistema)
+  
+- 📁 Imagens
+  - 📁 README (Imagens utilizadas no README)
+  - 📁 Trabalho Escrito (Imagens utilizadas no trabalho escrito)
+  
 - 📁 Modelo Relacional
   - 📄 Gaia (Modelo Relacional do Banco de Dados)
   - 📄 Dicionário de Dados (Documentação das tabelas e colunas do Modelo Relacional)
+  
+- 📄 README (Este arquivo que você está obervando agora mesmo)
 
 #
 
@@ -57,7 +64,7 @@ Desenvolvedores do Projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Utils/Imagens/Jean.jpg?raw=true" width="100px;" alt="Jean"/><br>
+        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Imagens/README/Jean.jpg?raw=true" width="100px;" alt="Jean"/><br>
         <sub>
           <b>Jean Barp</b>
         </sub>
@@ -65,7 +72,7 @@ Desenvolvedores do Projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Utils/Imagens/Matheus.jpg?raw=true" width="100px;" alt="Matheus"/><br>
+        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Imagens/README/Matheus.jpg?raw=true" width="100px;" alt="Matheus"/><br>
         <sub>
           <b>Matheus Christmann</b>
         </sub>
@@ -73,7 +80,7 @@ Desenvolvedores do Projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Utils/Imagens/Michel.jpg?raw=true" width="100px;" alt="Michell"/><br>
+        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Imagens/README/Michel.jpg?raw=true" width="100px;" alt="Michell"/><br>
         <sub>
           <b>Michell Spagnol</b>
         </sub>
