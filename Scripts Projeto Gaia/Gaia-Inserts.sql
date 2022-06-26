@@ -4,7 +4,7 @@ Banco de Dados Gaia fundado em 2010 */
 
 /* Inserções de Dados */
 
-insert into estado values
+insert into ESTADO values
   (1, 'RS', 'Rio Grande do Sul'),
   (2, 'SC', 'Santa Catarina'),
   (3, 'SP', 'São Paulo');
@@ -127,7 +127,7 @@ insert into PRODUTO values
 (1, 'Paracetamol P750', 'Medicamento para alívio de dores de cabeça', 4.99, 0, 0.75, 1, 2, 2, 2, 500),
 (2, 'Alopurinol', 'Medicamento usado para controlar Ácido Úrico', 7.99, 0, 0.10, 3, 2, 3, 2, 30),
 (3, 'Valium', 'Medicamento para alívio da ansiedade', 23.99, 0, 0.10, 2, 1, 4, 2, 100),
-(4,'Paracetamol P500', 'Medicamento para alívio de dores de cabeça', 3.99, 0, 0.50, 1, 2, 2, 2, 500),
+(4, 'Paracetamol P500', 'Medicamento para alívio de dores de cabeça', 3.99, 0, 0.50, 1, 2, 2, 2, 500),
 (5, 'Xarope Vick', 'Ajuda na eliminação do catarro em tosses', 15.00, 0, 0.12, 4, 2, 1, 2, 50);
 
 -----------------------------------
@@ -257,3 +257,6 @@ where pro_cod = 1;
 update produto
 set pro_quantidade = pro_quantidade - 15
 where pro_cod = 5;
+
+	
+

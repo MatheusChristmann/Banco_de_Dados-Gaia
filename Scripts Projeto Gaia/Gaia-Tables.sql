@@ -449,6 +449,7 @@ create table VENDA_ITEM (
   constraint VEI_ID_PK primary key, 
   VEI_VEN_NUMERO int4 not null, 
   VEI_PRO_COD int4 not null, 
+  constraint VEI_VEN_COD_UK Unique(VEI_VEN_NUMERO, VEI_PRO_COD),
   VEI_QTD_ITEM numeric(8, 2) not null, 
   VEI_PRECO numeric(8, 2) not null, 
   VEI_TOTAL_ITEM numeric(8, 2) not null
@@ -520,6 +521,7 @@ create table COMPRA_ITEM (
   constraint COI_ID_PK primary key, 
   COI_COM_NUMERO int4 not null, 
   COI_PRO_COD int4 not null, 
+  constraint CEI_COM_COD_UK Unique(COI_COM_NUMERO, COI_PRO_COD),
   COI_QTD_ITEM numeric(8, 2) not null, 
   COI_UNITARIO_ITEM numeric(8, 2) not null, 
   COI_TOTAL_ITEM numeric(8, 2) not null
