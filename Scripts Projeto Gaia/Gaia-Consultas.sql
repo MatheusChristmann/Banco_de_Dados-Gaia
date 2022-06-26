@@ -67,7 +67,7 @@ and mod(extract(month from venda.ven_data),2) = 0
 group by 1,2
 order by "Total em Compras" desc;
 
-and EXTRACT (YEAR FROM AGE(CURRENT_DATE, pes_data_nascimento)) between 20 and 40
+
 
 
 
