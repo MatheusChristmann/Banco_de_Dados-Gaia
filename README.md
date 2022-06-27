@@ -25,7 +25,8 @@ O Projeto Gaia se trata de um trabalho avaliativo para a matéria de Banco de Da
 
 ### 📦 Estrutura de Pastas
 
-- 📄 Projeto Gaia (Documentação e descrição do processo de desenvolvimento do trabalho)
+- 📁 Trabalho Escrito
+  - 📄 Projeto Gaia (Documentação e descrição do processo de desenvolvimento do trabalho)
 
 - 📁 Scripts
   - 📄 Gaia-Tables (Scripts de criação da Base de Dados, tabelas, constraints e índices)
