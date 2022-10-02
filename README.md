@@ -65,7 +65,7 @@ Desenvolvedores do Projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Imagens/README/Jean.jpg?raw=true" width="100px;" alt="Jean"/><br>
+        <img src="https://github.com/MatheusChristmann/Banco_de_Dados-Gaia/blob/main/Imagens/README/Jean.jpg" width="100px;" alt="Jean"/><br>
         <sub>
           <b>Jean Barp</b>
         </sub>
@@ -73,7 +73,7 @@ Desenvolvedores do Projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Imagens/README/Matheus.jpg?raw=true" width="100px;" alt="Matheus"/><br>
+        <img src="https://github.com/MatheusChristmann/Banco_de_Dados-Gaia/blob/main/Imagens/README/Matheus.jpg" width="100px;" alt="Matheus"/><br>
         <sub>
           <b>Matheus Christmann</b>
         </sub>
@@ -81,7 +81,7 @@ Desenvolvedores do Projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/MatheusChristmann/gaia/blob/main/Imagens/README/Michel.jpg?raw=true" width="100px;" alt="Michell"/><br>
+        <img src="https://github.com/MatheusChristmann/Banco_de_Dados-Gaia/blob/main/Imagens/README/Michel.jpg" width="100px;" alt="Michell"/><br>
         <sub>
           <b>Michell Spagnol</b>
         </sub>
